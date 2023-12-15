@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-bfo8
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-rgrv-tenant/appstudio/dc-metro-map-bfo8@sha256:5953e3ef9120e6775b0d209b5226ac5a4dd251bda53ead2f5ad2362712cddefb
+        name: my-nodejs
+        resources: {}
+status: {}
